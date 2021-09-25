@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icons/telegram.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Telegram</title>
+</head>
+
+<body>
+    <!--#D115C5-->
+    <!--#8f8f8f-->
+    <!--border: 2px solid #D115C5;-->
+    <section class="wrapper">
+        <div class="container-xxl d-flex g-0">
+            <div class="row w-100 g-0">
+                <div id="users" class="col-lg-3 col-md-5 col-sm-5">
+                    <div>
+                        <div class="system_icons d-flex align-items-center">
+                            <button class="menu_button">
+                                <img src="./img/icons/menu.png" alt="menu" class="menu_img">
+                            </button>
+                            <form class="search_form d-flex align-items-center">
+                                <img src="./img/icons/magnifying-glass.png" alt="loupe" class="search">
+                                <input type="text" placeholder="Search" class="form__input">
+                            </form>
+                        </div>
+                        <ul class="folders">
+                            <li class="folders__item">
+                                <button class="folders__item__button">All chats</button>
+                            </li>
+                            <li class="folders__item">
+                                <button class="folders__item__button">Channel</button>
+                            </li>
+                            <li class="folders__item">
+                                <button class="folders__item__button">People</button>
+                            </li>
+                            <li class="folders__item">
+                                <button class="folders__item__button">Groups</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="scroll">
+                        <ul class="people__list">
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-7 col-sm-7 d-flex">
+                    <div id="users_info">
+                        <div class="users_info_header d-none ">
+                            <div class="name_date_img_wrapper">
+                                <img src="./img/profil_img/muhammadyunus.jpg" alt="people img" class="peopleImg">
+                                <div class="name_date_wrapper">
+                                    <h5 class="people_name">Muhammad Yunus</h5>
+                                    <time>last seen recently</time>
+                                </div>
+                            </div>
+                            <div class="users_info_header_buttons d-flex align-items-center">
+                                <button class="header_buttons_one">
+                                    <img src="./img/icons/search.png" alt="" class="word_search">
+                                </button>
+                                <button class="header_buttons_two">
+                                    <img src="./img/icons/menu-dots.png" alt="" class="menu_dots">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="users_info_main d-none">
+                            <ul class="user_info_main_list">
+                                
+                            </ul>
+                        </div>
+                        <div class="users_info_footer d-none">
+                            <div>
+                                <form class="users_info_footer_form">
+                                    <img src="./img/icons/smiling-emoticon-square-face.png" alt="smile face"
+                                        class="form_icons">
+                                    <input type="text" placeholder="Message" class="footer_form_input">
+                                </form>
+                                <button class="send_message_button">
+                                    <img src="./img/icons/microphone.png" alt="microphone">
+                                    <img src="./img/icons/send.png" alt="send" class="d-none">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qidiruv d-none">
+                        <div>
+                            <button class="close_btn">
+                                <img src="./img/icons/cancel.png" alt="cancel" class="close_img">
+                            </button>
+                            <form class="qidiruv_form">
+                                <img src="./img/icons/magnifying-glass.png" alt="loupe" class="word_search_loupe">
+                                <input type="text" class="qidiruv_form_input" placeholder="Search">
+                            </form>
+                            <button>
+                                <img src="./img/icons/calendar.png" alt="calendar" class="calendar">
+                            </button>
+                        </div>
+                        <h5 class="search_text">Search for message</h5>
+                        <ul class="search_result_message">
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="settings d-none">
+                <ul class="settings_list ps-0 mb-0">
+                    <li class="settings_item">
+                        <button class="settings_button">
+                            <img src="./img/icons/bookmark.png" alt="bookmark">
+                            <p class="mb-0">Saved Message</p>
+                        </button>
+                    </li>
+                    <li class="settings_item">
+                        <button class="settings_button">
+                            <img src="./img/icons/download-button.png" alt="archiv">
+                            <p class="mb-0">Archived Chats</p>
+                        </button>
+                    </li>
+                    <li class="settings_item">
+                        <button class="settings_button">
+                            <img src="./img/icons/telemarketer.png" alt="Contacts">
+                            <p class="mb-0">Contacts</p>
+                        </button>
+                    </li>
+                    <li class="settings_item">
+                        <button class="settings_button">
+                            <img src="./img/icons/call.png" alt="calls">
+                            <p class="mb-0">Calls</p>
+                        </button>
+                    </li>
+                    <li class="settings_item">
+                        <button class="settings_button">
+                            <img src="./img/icons/settings.png" alt="settings">
+                            <p class="mb-0">Settings</p>
+                        </button>
+                    </li>
+                    <li class="settings_item">
+                        <button class="settings_button">
+                            <img src="./img/icons/gear.png" alt="gear">
+                            <p class="mb-0">Telegram Features</p>
+                        </button>
+                    </li>
+                </ul>
+                <p class="version">Telegram WebZ alpha 1.4.7</p>
+            </div>
+
+            <div class="mute_select_delete d-none">
+                <ul class="mute_select_delete_list mb-0 ps-0">
+                    <li class="mute_select_delete_item">
+                        <button class="mute_select_delete_button">
+                            <img src="./img/icons/silence.png" alt="silence">
+                            <p class="mb-0">Mute</p>
+                        </button>
+                    </li>
+                    <li class="mute_select_delete_item">
+                        <button class="mute_select_delete_button">
+                            <img src="./img/icons/verified.png" alt="verified">
+                            <p class="mb-0">Select Message</p>
+                        </button>
+                    </li>
+                    <li class="mute_select_delete_item">
+                        <button class="mute_select_delete_button">
+                            <img src="./img/icons/delete.png" alt="delete">
+                            <p class="mb-0 text-danger">Delete</p>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="peoples_profil d-none">
+        <div class="people_profil">
+            <div class="people_profil_info">
+                <h5 class="mb-0">User Info</h5>
+                <ul class="people_profil_icons_list mb-0">
+                    <li class="people_profil_icons_item">
+                        <button class="people_profil_icons_item_button">
+                            <img src="./img/icons/call.png" alt="call">
+                        </button>
+                    </li>
+                    <li class="people_profil_icons_item">
+                        <button class="people_profil_icons_item_button">
+                            <img src="./img/icons/menu-dots.png" alt="menu-dots">
+                        </button>
+                    </li>
+                    <li class="people_profil_icons_item">
+                        <button class="people_profil_icons_item_button people_profil_icons_item_button3" id="buttonRemove">
+                            <img src="./img/icons/cancel.png" alt="cancel">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="people_profil_img_time">
+                <img src="./img/profil_img/muhammadyunus.jpg" alt="People picture" class="peopleProfilImg">
+                <div>
+                    <h5 class="peopleProfilPictureName">Muhammad Yunus</h5>
+                    <time>Last seen recently</time>
+                </div>
+            </div>
+
+            <ul class="people_profil_info_list ps-3">
+                <li class="people_profil_info_item">
+                    <img src="./img/icons/call.png" alt="call">
+                    <div>
+                        <h5 class="people_number mb-0">+998 99 987 65 43</h5>
+                        <p class="mb-0 infO">Phone</p>
+                    </div>
+                </li>
+                <li class="people_profil_info_item">
+                    <img src="./img/icons/bio.png" alt="call">
+                    <div>
+                        <p class="people_bio mb-0">19 y.o. Fullstack developer</p>
+                        <p class="mb-0 infO">Bio</p>
+                    </div>
+                </li>
+                <li class="people_profil_info_item">
+                    <img src="./img/icons/at.png" alt="call">
+                    <div>
+                        <h5 class="people_username mb-0">@muhammad_yunusoff</h5>
+                        <p class="mb-0 infO">Username</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="./app.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
